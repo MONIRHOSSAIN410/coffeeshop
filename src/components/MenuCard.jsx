@@ -10,12 +10,12 @@ import { Link } from 'react-router-dom';
 const MenuCard = () => {
 
   const carselector = useSelector((state)=>state.cart.items)
-  // const navigate=useNavigate()
+
 
   return (
     <div>
     <Link to='/cartlist'>
-    <span><Heart />{carselector.length ? carselector.length:0}</span> 
+    <span className='text-white flex'><Heart/>{carselector.length ? carselector.length:0}</span> 
     
     </Link>
     </div>
